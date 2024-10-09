@@ -1,9 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace gcodb
 {
@@ -13,7 +8,8 @@ namespace gcodb
         {
             base.OnConfiguring(optionsBuilder);
             optionsBuilder
-                .UseSqlServer("Server=localhost;Database=Teste;User Id=sa;Password=Senha;TrustServerCertificate=true");
+                .UseNpgsql("User ID=postgres;Password=SENHABANCODADOS;Host=localhost;Port=5432;Database=NOMEBANCODEDADOS;");
+                //.UseSqlServer("Server=localhost;Database=Teste;User Id=sa;Password=Senha;TrustServerCertificate=true");
         }
     }
 }
