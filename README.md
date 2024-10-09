@@ -6,4 +6,5 @@
 * Comando para atualizar o banco de dados: Update-Database
 * Conexão com o banco de dados: Arquivo ContextoBancoDados.cs
 * Executar os comandos no Package Manager Console (View -> Other Windows -> Package Manager Console)
+* Tabela de controle das migrações de banco de dados executadas: __EFMigrationsHistory
 
