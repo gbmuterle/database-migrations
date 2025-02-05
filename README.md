@@ -1,5 +1,4 @@
-# gcoCode3
-## Projeto base de teste para migrações de banco de dados
+## Projeto base para manutenção de banco de dados
 
 ## Pontos principais
 * Conexão com o banco de dados: Arquivo ContextoBancoDados.cs
