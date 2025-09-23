@@ -19,4 +19,5 @@
 * Observar para marcar o projeto que contem as migrações de banco de dados
 
 ## Alterações no appsettings.json não aparecem para commit no repositório local
-git update-index --assume-unchanged gcodb/appsettings.json
+git update-index --assume-unchanged gcodb/appsettings.json [ignora o arquivo nas modificações ]
+git update-index --no-assume-unchanged gcodb/appsettings.json [ desfaz o comando para ignorar, ou seja, volta a ser considerado ]
