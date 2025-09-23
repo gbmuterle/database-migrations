@@ -10,6 +10,7 @@
 * **dotnet tool install --global dotnet-ef** [ Habilitar o cli via dotnet ef - Executar apenas uma vez ]
 * **dotnet ef migrations add NomeDaMigracao** [ Criar uma migração. Sempre que quiser uma nova alteração no banco de dados ]
 * **dotnet ef database update** [ Atualizar as migrações de banco de dados. Sempre que quiser efetivar no banco as mudanças ]
+* **dotnet ef database update NOME_MIGRACAO_DESTINO** [ Faz o downgrade das migrações. Desfaz migrações até chegar na migração destino ] 
 * Observar para estar no diretório do projeto que contém as migrações
 
 ## Via Visual Studio (Package Manager Console)
@@ -18,6 +19,6 @@
 * **Update-Database** [ Atualizar as migrações de banco de dados. Sempre que quiser efetivar no banco as mudanças ]
 * Observar para marcar o projeto que contem as migrações de banco de dados
 
-## Alterações no appsettings.json não aparecem para commit no repositório local
-* git update-index --assume-unchanged gcodb/appsettings.json [ignora o arquivo nas modificações ]
-* git update-index --no-assume-unchanged gcodb/appsettings.json [ desfaz o comando para ignorar, ou seja, volta a ser considerado ]
+## Comando para as alterações no appsettings.json não aparecem para commit no repositório local
+* **git update-index --assume-unchanged gcodb/appsettings.json** [ Ignora o arquivo nas modificações ]
+* **git update-index --no-assume-unchanged gcodb/appsettings.json** [ Desfaz o comando para ignorar, ou seja, volta a ser considerado ]
