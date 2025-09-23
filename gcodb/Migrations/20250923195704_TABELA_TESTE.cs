@@ -10,7 +10,7 @@ namespace gcodb.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.Sql("CREATE TABLE TABELATESTE( ID INT IDENTITY, DESCRICAO VARCHAR(100), DATAHORA DATETIME)");
+            migrationBuilder.Sql("CREATE TABLE TABELATESTE( ID INT PRIMARY KEY, DESCRICAO VARCHAR(100), DATAHORA DATETIME)");
         }
 
         /// <inheritdoc />
