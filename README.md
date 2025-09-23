@@ -17,3 +17,6 @@
 * **Add-Migration NomeDaMigraca**o [ Criar uma migração. Sempre que quiser uma nova alteração no banco de dados ]
 * **Update-Database** [ Atualizar as migrações de banco de dados. Sempre que quiser efetivar no banco as mudanças ]
 * Observar para marcar o projeto que contem as migrações de banco de dados
+
+## Alterações no appsettings.json não aparecem para commit no repositório local
+git update-index --assume-unchanged gcodb/appsettings.json
