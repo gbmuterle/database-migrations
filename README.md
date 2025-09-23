@@ -3,6 +3,8 @@
 ## Pontos principais
 * Conexão com o banco de dados: Arquivo ContextoBancoDados.cs
 * Tabela de controle das migrações de banco de dados executadas: __EFMigrationsHistory
+* Para usar SQL Server: UseSqlServer do arquivo ContextoBancoDados.cs
+* Para usar PostgreSQL: UseNpgsql do arquivo ContextoBancoDados.cs
 
 ## Via dotnet CLI ou Terminal do VSCode
 * **dotnet tool install --global dotnet-ef** [ Habilitar o cli via dotnet ef - Executar apenas uma vez ]
