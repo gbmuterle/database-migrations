@@ -13,7 +13,7 @@ namespace gcodb.Migrations
                 CREATE TABLE TABELATESTE (
                     ID INT PRIMARY KEY,
                     DESCRICAO VARCHAR(100),
-                    DATAHORA DATETIME
+                    DATAHORA DATETIMEE
                 )");
         }
 
